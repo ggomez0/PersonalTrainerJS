@@ -81,7 +81,7 @@ export function Signup() {
           <p>
             Si ya tienes una cuenta
             <span>
-              <Link to="/Login"> Iniciar Sesion</Link>
+              <Link to="/"> Iniciar Sesion</Link>
             </span>
           </p>
         </div>

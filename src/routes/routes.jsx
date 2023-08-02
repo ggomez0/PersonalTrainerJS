@@ -9,8 +9,7 @@ export function MyRoutes() {
   return (
     <Router>
       <Routes>
-        <Route exact path="/" element={<Inicio />} />
-        <Route exact path="/Login" element={<Login />} />
+        <Route exact path="/" element={<Login />} />
         <Route exact path="/Signup" element={<Signup />} />
         <Route exact path="/Home" element={<Home />} />
         <Route path="*" Component={Error404} />

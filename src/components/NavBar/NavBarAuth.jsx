@@ -19,10 +19,10 @@ export function NavBarAuth() {
           <img
             src="./src/assets/bnb.png"
             className="h-8 mr-3"
-            alt="Flowbite Logo"
+            alt="Personal Trainer"
           />
           <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
-            TITULO
+            Personal Trainer
           </span>
         </a>
         <div className="flex items-center md:order-2">

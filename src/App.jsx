@@ -26,9 +26,8 @@ export function App() {
 
   return (
     <div className="mx-auto max-w-screen-xl">
-      {isLoggedIn ? <NavBarAuth /> : <NavBar />}
+      {isLoggedIn ? <NavBarAuth /> : <> </>}
       <MyRoutes />
-      <Footer />
     </div>
   );
 }
