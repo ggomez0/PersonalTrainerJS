@@ -42,7 +42,7 @@ export function UserView() {
     const usuario = data.find((user) => user.email === email);
     
     if (usuario && email === authUserEmail) {
-      return <iframe className="w-full h-96" src={usuario.driveurl}></iframe>;
+      return <iframe className="w-96 h-96 " src={usuario.driveurl}></iframe>;
       
     }
     
