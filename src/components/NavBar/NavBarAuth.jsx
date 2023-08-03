@@ -15,19 +15,19 @@ export function NavBarAuth() {
   return (
     <nav className="">
       <div className="flex flex-wrap items-center justify-between max-w-screen-xl mx-auto p-4">
-        <a href="#" class="flex items-center">
-          <img
+        <a href="/Home" class="flex items-center">
+          {/* <img
             src="./src/assets/bnb.png"
             className="h-8 mr-3"
             alt="Personal Trainer"
-          />
+          /> */}
           <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
-            Personal Trainer
+            PERSONAL TRAINER
           </span>
         </a>
         <div className="flex items-center md:order-2">
           <button
-            className="btn bg-red-900 hover:bg-red-800"
+            className=""
             onClick={handleLogout}
           >
             Salir
