@@ -5,7 +5,6 @@ export function NavBarAuth() {
   const handleLogout = async () => {
     try {
       await auth.signOut();
-      Navigate("/");
     } catch (error) {
       // Manejar errores de cierre de sesión
       console.error("Error al cerrar sesión:", error);

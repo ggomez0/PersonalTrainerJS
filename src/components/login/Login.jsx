@@ -1,4 +1,4 @@
-import { Link, useNavigate } from "react-router-dom";
+import { Link, Navigate, useNavigate } from "react-router-dom";
 import FirebaseApp from "../../firebase";
 import { getAuth, signInWithEmailAndPassword } from "firebase/auth";
 import { getFirestore, doc, collection, setDoc } from "firebase/firestore";
@@ -8,7 +8,6 @@ const auth = getAuth(FirebaseApp);
 
 export function Login() {
   const firestore = getFirestore(FirebaseApp);
-  const navigate = useNavigate();
   const [values, setvalues] = useState({ email: "", pass: "" });
   const [errorMsg, setErrorMsg] = useState([]);
   const [submitButtonDisabled, setSubmitButtonDisabled] = useState(false);
@@ -23,7 +22,6 @@ export function Login() {
     signInWithEmailAndPassword(auth, values.email, values.pass)
       .then(async (res) => {
         setSubmitButtonDisabled(false);
-        navigate("/Home");
       })
       .catch((err) => {
         setSubmitButtonDisabled(false);
